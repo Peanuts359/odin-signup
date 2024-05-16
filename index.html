@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image">
+        <div class="logo">
+            <img src="images/odin-lined.png" height="120px" width="90px">
+            ODIN
+        </div>
+        <div class="credit">
+            Photo by Halie West on Unsplash
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="title">
+            <p>This is not a real online service! You know you need something like this in your 
+                life to help you realise your deepest dreams.
+            </p>
+            <p>Sign up NOW to get started.</p>
+            <br>
+            <p>You KNOW you want to.</p>
+        </div>
+    </div>
+    
+    <div class="form-body">
+        <form>
+            <fieldset>
+                <p>Let's do this.</p>
+                <div class="form-contents">
+                    <div class="form-left">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Thor" required>
+                        </div>
+                        <div>
+                            <label for="email">USER EMAIL</label>
+                            <input type="text" id="email" name="email" placeholder="thorodinson@email.com" required>
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" placeholder="min of 8 chars" minlength="8" required>
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
+                        </div>
+                        <div>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="text" id="phone_number" name="phone_number" required>
+                        </div>
+                        <div>
+                            <label for="password_confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="password_confirm" name="password_confirm" placeholder="must match password" minlength="8" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="*">Log in</a></p>
+        </form>
+    </div>
+</body>
+</html>
