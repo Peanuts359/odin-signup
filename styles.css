@@ -13,18 +13,6 @@
     src: url(fonts/LilitaOne-Regular.ttf);
 }
 
-.logo {
-    color: white;
-}
-
-.credit {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
 body{
     display: flex;
     padding: 0px;
@@ -41,7 +29,8 @@ body{
     flex: 1 1 auto;
 }
 
-.logo{
+.logo {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +44,118 @@ body{
     min-width: 420px;
 }
 
+.credit {
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     background-color: #e5e5e5;
     height: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 50px 50px 50px;
+    width: 650px;
+    font-size: 20px;
+    flex: 2 1 auto;
+    justify-content: flex-end;
+}
+
+.form-body {
+    display: flex;
+    flex: 3 1 auto;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border: none;
+    height: 300px;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 50%);
+}
+
+fieldset > p {
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.form-contents {
+    display: flex;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 auto;
+    margin-left: 50px;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 auto;
+}
+
+label {
+    display: block;
+    flex: 1 1 auto;
+    font-size: 14px;
+}
+
+input {
+    display: block;
+    flex: 1 1 auto;
+    width: 225px;
+    height: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus{
+    border-color: blue;
+}
+
+#password:invalid, #password_confirm:invalid {
+    border-color: red;
+}
+
+button {
+    margin: 20px 20px 20px 50px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #596D48;
+}
+
+form > p {
+    margin-left: 50px;
+}
+
+a {
+    color: #596d48;
+    text-decoration: none;
 }
